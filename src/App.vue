@@ -101,10 +101,6 @@ export default {
   },
   async mounted() {
     await this.loadDefaultDrinks();
-    document.addEventListener('click', this.handleClickOutside);
-  },
-  destroyed() {
-    document.removeEventListener('click', this.handleClickOutside);
   },
   computed: {
     getDrinks() {
@@ -146,6 +142,7 @@ export default {
 
   .content-wrp {
     max-width: 1920px;
+    margin: 0 auto;
     padding: 0 10px;
   }
 
