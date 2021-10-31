@@ -88,15 +88,13 @@ export default {
 </script>
 
 <style scoped>
-
     #search-drink-input {
-     border: solid 1px rgb(200, 204, 209);
-     padding: 5px;
+       border: solid 1px rgb(200, 204, 209);
+       padding: 5px;
     }
 
     .autocomplete {
         position: relative;
-        width: 175px;
     }
 
     .autocomplete-results {
@@ -123,5 +121,14 @@ export default {
     .autocomplete-result:hover {
         background-color: #4AAE9B;
         color: white;
+    }
+    /****************-Responsive-*****************/
+    @media (max-width: 600px) {
+     .autocomplete {
+        width: 100%;
+     }
+     #search-drink-input{
+        width: 100%;
+     }
     }
 </style>

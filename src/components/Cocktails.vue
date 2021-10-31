@@ -104,19 +104,6 @@ export default {
 </script>
 
 <style scoped>
-.cocktail-item {
-  margin: 5px;
-}
-
-.drink-img-wrp {
- width: 150px;
-}
-
-/* .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-} */
 
 .tooltip {
   visibility: hidden;
@@ -127,8 +114,10 @@ export default {
   border-radius: 6px;
   /* Position the tooltip */
   position: absolute;
-  left: 25%;
-  right: 50%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
   z-index: 99;
 }
 
@@ -140,5 +129,12 @@ export default {
 
 .cocktail-item:hover .tooltip {
   visibility: visible;
+}
+
+/***************Responsive*****************/
+@media (max-width: 600px) {
+  .tooltip {
+    width: 100%;
+  }
 }
 </style>
